@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><testplan>
+
+<testCase id="CDLandingPage-1" script="testCase_CDLandingPage-1" class="CheckLinks" desc="Login to Seratel Dashboard and check all module links"/>
+<testCase id="CDLandingPage-2" script="testCase_CDLandingPage-2" class="CheckLinks" desc="Give various access rights to the user and check all module links"/>
+<testCase id="CDLandingPage-3" script="testCase_CDLandingPage-3" class="CheckLinks" desc="Check Help link"/>
+<testCase id="CDLandingPage-5" script="testCase_CDLandingPage-5" class="CheckLinks" desc="Check for signout"/>
+<testCase id="CDLandingPage-6" script="testCase_CDLandingPage-6" class="CheckLinks" desc="Welcome message on the header"/>
+<testCase id="CDLandingPage-7" script="testCase_CDLandingPage-7" class="CheckLinks" desc="Copyright message"/>
+
+
+</testplan>
+

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite>
+
+	<testPlan id = "6" component="monitoring" browser="chrome" desc = "Call Monitoringtestplan"/>
+
+	
+	
+	
+
+	<!--
+	<testPlan id = "1" component="rs" browser="firefox" desc = "Routing Strategy Test Plan"/>	
+	<testPlan id = "2" component="rtmc"  desc = "Real Time Monitoring System testplan"/>
+	<testPlan id = "3" component="hrs"  desc = "Historical Monitoring testplan"/>
+	<testPlan id = "4" component="PasswordReset"  desc = "Password Reset testplan"/>
+	<testPlan id = "5" component="UnlockAgent"  desc = "Unlock Agent testplan"/>
+	<testPlan id = "6" component="monitoring" browser="chrome" desc = "Call Monitoringtestplan"/>
+	<testPlan id = "7" component="provisioning" browser="chrome" desc = "OD Provisioning testplan"/>
+	<testPlan id = "8" component="CDLandingPage" browser="firefox" desc = "Routing Strategy Test Plan"/>	
+	-->
+	
+</testsuite>

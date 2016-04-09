@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<testcase id="CM-3" max-time="" >
+    
+        <script>
+	   <selectScheduleView
+				view="calender"				
+	     />
+         </script>
+</testcase>
+

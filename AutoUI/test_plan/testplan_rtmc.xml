@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><testplan>
+
+
+
+
+<testCase id="RTMC-1" script="testCase_RTMC-1" desc="rtmc 1 description"/>	
+<testCase id="RTMC-2" script="testCase_RTMC-2" desc="rtmc 2 description"/>	
+<testCase id="RTMC-3" script="testCase_RTMC-3" desc="rtmc 3 description"/>	
+<testCase id="RTMC-4" script="testCase_RTMC-4" desc="rtmc 4 description"/>	
+
+</testplan>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><testplan>
+
+<testCase id="RS-1" script="testCase_RS-1" class="AddRoutingStrategy" desc="AddRoutingStrategy description"/>
+<testCase id="RS-2" script="testCase_RS-2" class="EditRoutingStrategy" desc="Edit RoutingStrategy description"/>
+	
+
+
+</testplan>

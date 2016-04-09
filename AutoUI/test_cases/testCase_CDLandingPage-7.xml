@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<testcase id="CDLandingPage-7" max-time="" >
+    
+        <script>
+	   <checkLinks
+			displayedLinks="Copyright"
+			copyRightMessage="Copyright 2005- 2016 (C) Transera Communications Inc."							  
+	     />
+         </script>
+</testcase>
+

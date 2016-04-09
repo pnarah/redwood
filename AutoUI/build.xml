@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?> 
+<project name="autoui" basedir="." default="all">
+	
+
+	<target name="clean" description="Cleaning Directories">
+		    <delete dir="./build" />
+	</target>
+	
+	<target name="prepare" description="Making required directories">
+	    <mkdir dir="build" />
+	</target>
+	
+	<target name="init" depends="prepare" description="Initialize and set up properties">
+	    <property name="src.dir" location="./src/" />
+	    <property name="build.dir" value="build" />
+	    <property name="library.dir" value="lib" />
+	</target>
+
+
+	<!--taskdef name="xjc" classname="org.apache.ws.jaxme.generator.XJCTask" classpathref="build.classpath"/-->
+	
+	
+	<target name="compile" depends="init">
+		<mkdir dir="./bin" />
+		<javac srcdir="./src"  destdir="./bin"	includeantruntime="false"  debug="true" fork="java$$javac.exe">
+			<classpath refid="build.classpath" />
+			<include name="**/*.java"/>			
+		</javac>
+	</target>
+
+	
+	<target name="jar" depends="compile" description="JARing files for distribution">
+	    <jar destfile="./build/autoui.jar" basedir="./bin">
+	        <manifest>
+	        	<attribute name="Main-Class" value="com.transera.executor.StartExecution" />	
+	        </manifest>
+	    </jar>
+	</target>
+
+
+	
+	<target name="all" depends="jar" >
+	</target>
+
+	
+</project>

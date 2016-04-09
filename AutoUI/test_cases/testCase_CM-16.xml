@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<testcase id="CM-16" max-time="" >
+    
+        <script>
+	   <placeContinuousMonitoring
+				vTeam="Q_Apple_Inbound_1;Q_Apple_Inbound_4;Q_Out_Apple_Inbound_3"
+				site="Crispin;Spigold;Winesap"
+				team="Crispin_Team-1;Spigold_Team-1;Winesap_Team-2"
+				agent="CrispinAgent1;SpigoldAgent4;WinesapAgent2"
+				dn="2004"
+	     />
+         </script>
+</testcase>

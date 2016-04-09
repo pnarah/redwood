@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><testplan>
+
+<!--
+<testCase id="CM-1" script="testCase_CM-1" class="CheckLinks" desc="Call Monitoring UI"/>
+<testCase id="CM-2" script="testCase_CM-2" class="SelectScheduleView" desc="Schedule for list view"/>
+<testCase id="CM-3" script="testCase_CM-3" class="SelectScheduleView" desc="Schedule for calender view"/>
+<testCase id="CM-4" script="testCase_CM-4" class="AddScheduledMonitoring" desc="Add monitoring schedule"/>
+<testCase id="CM-16" script="testCase_CM-16" class="PlaceContinuousMonitoring" desc="Place Continuous Monitoring Requests"/>
+-->
+
+<testCase id="CM-4" script="testCase_CM-4" class="AddScheduledMonitoring" desc="Add monitoring schedule"/>
+
+</testplan>

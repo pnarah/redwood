@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><testplan>
+
+<testCase id="Prov-1" script="testCase_Prov-1" class="AddTenant" desc="Add tenant description"/>
+<testCase id="Prov-2" script="testCase_Prov-2" class="EditTenant" desc="Edit tenant description"/>
+
+<testCase id="Prov-3" script="testCase_Prov-3" component="rs" class="AddRoutingStrategy" desc="Check RS is accessible"/>
+
+
+</testplan>

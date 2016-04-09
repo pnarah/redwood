@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<testcase id="CM-16" max-time="" >
+    
+        <script>
+	   <checkLinks
+				displayedLinks="Help;CloseModule;WelcomeMessage"
+				copyRightMessage="Copyright 2005-2016 (C) Transera Communications Inc."	
+	     />
+         </script>
+</testcase>
+

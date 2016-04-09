@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<testcase id="CDLandingPage-6" max-time="" >
+    
+        <script>
+	   <checkLinks
+			displayedLinks="WelcomeMessage"
+	   
+	     />
+         </script>
+</testcase>
+

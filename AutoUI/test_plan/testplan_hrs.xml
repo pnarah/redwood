@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testplan>
+
+<testCase id = "1" component= "Service Provisioning" desc = "Adding a tenant"/>
+
+
+<!--testCase id = "1" component= "Service Provisioning" desc = "Adding a tenant"/>
+<testCase id = "2"   component= "Service Provisioning" desc = "Editing a tenant"/>
+<testCase id = "3"  component= "Service Provisioning" desc = "Validation of Tenant(Empty tenant name)"/>
+<testCase id = "4"  component= "Service Provisioning" desc = "Validation of Tenant(Empty login domain)"/>
+<testCase id = "5"  component= "Service Provisioning" desc = "Validation of Tenant(Login domain with spaces)"/>
+<testCase id = "6"  component= "Service Provisioning" desc = "Validation of Tenant(Empty timezone)"/>
+<testCase id = "7"  component= "Service Provisioning" desc = "Validation of Tenant(Empty IVR Park URL)"/>
+<testCase id = "8"  component= "Service Provisioning" desc = "Validation of Tenant(Special characters in tenant name)"/>
+<testCase id = "9"  component= "Service Provisioning" desc = "Adding a tenant and verifying it under Tenant tree"/>
+<testCase id = "10"  component= "Service Provisioning" desc = "Validation of Tenant (Empty Address 1 entry)"/>
+<testCase id = "11"  component= "Service Provisioning" desc = "Validation of Tenant (Empty City entry)"/>
+<testCase id = "12"  component= "Service Provisioning" desc = "Validation of Tenant (Empty Country entry)"/>
+<testCase id = "13"  component= "Service Provisioning" desc = "Validation of Tenant (Empty State entry)"/>
+<testCase id = "14"  component= "Service Provisioning" desc = "Validation of Tenant (Empty Postal code entry)"/>
+<testCase id = "15"  component= "Service Provisioning" desc = "Validation of Tenant (Postal code entry with special characters)"/>
+<testCase id = "16"  component= "Service Provisioning" desc = "Validation of Tenant (Empty First name entry)"/>
+<testCase id = "17"  component= "Service Provisioning" desc = "Validation of Tenant (Empty Last name entry)"/>
+<testCase id = "18"  component= "Service Provisioning" desc = "Validation of Tenant (Empty Max Callback attempts entry)"/>
+<testCase id = "19"  component= "Service Provisioning" desc = "Validation of Tenant (Empty Retry callback attempts)"/>
+<testCase id = "20"  component= "Service Provisioning" desc = "Validation of Tenant (Max Callback attempts entry as 0)"/>
+<testCase id = "21"  component= "Service Provisioning" desc = "Adding an address book"/>
+<testCase id = "22"  component= "Service Provisioning" desc = "Address book Validation(Empty address book name)"/>
+<testCase id = "23"  component= "Service Provisioning" desc = "Address book Validation(Empty Name)"/>
+<testCase id = "24"  component= "Service Provisioning" desc = "Address book Validation(Empty Phone number)"/>
+<testCase id = "25"  component= "Service Provisioning" desc = "Duplicate Address book"/>
+<testCase id = "26"  component= "Service Provisioning" desc = "Entry name with special characters"/>
+<testCase id = "27"  component= "Service Provisioning" desc = "Adding a CAD Variable"/>
+<testCase id = "28"  component= "Service Provisioning" desc = "Editing a CAD Variable"/>
+<testCase id = "29"  component= "Service Provisioning" desc = "Validation of a CAD Variable"/>
+<testCase id = "30"  component= "Service Provisioning" desc = "Validation of a CAD Variable(Empty Agent Editable)"/>
+<testCase id = "31"  component= "Service Provisioning" desc = "Validation of a CAD Variable(Empty Deprecated entry)"/>
+<testCase id = "32"  component= "Service Provisioning" desc = "Adding a duplicate CAD variable"/>
+<testCase id = "33"  component= "Service Provisioning" desc = "Special characters in CAD Name"/>
+<testCase id = "34"  component= "Service Provisioning" desc = "Clicking on Cancel button after entering the CAD details"/>
+<testCase id = "35"  component= "Service Provisioning" desc = "Adding a Skill Definition"/>
+<testCase id = "36"  component= "Service Provisioning" desc = "Editing a Skill Definition"/>
+<testCase id = "37"  component= "Service Provisioning" desc = "Adding a duplicate Skill Definition"/>
+<testCase id = "38"  component= "Service Provisioning" desc = "Validation of Skill Definition(Empty skill name)"/>
+<testCase id = "39"  component= "Service Provisioning" desc = "Validation of Skill Definition(Empty skill name)"/>
+<testCase id = "40"  component= "Service Provisioning" desc = "Special characters in Skill definition name"/>
+<testCase id = "41"  component= "Service Provisioning" desc = "Adding a Skill Profile"/>
+<testCase id = "42"  component= "Service Provisioning" desc = "Adding a duplicate Skill Profile"/>
+<testCase id = "43"  component= "Service Provisioning" desc = "Validation of a Skill Profile(empty profile name)"/>
+<testCase id = "44"  component= "Service Provisioning" desc = "Special characters in Skill Prcofile name"/>
+<testCase id = "45"  component= "Service Provisioning" desc = "Saving without selecting any skill definitions"/>
+<testCase id = "46"  component= "Service Provisioning" desc = "Adding a Ep-queue group"/>
+<testCase id = "47"  component= "Service Provisioning" desc = "Editing a Ep-queue group"/>
+<testCase id = "48"  component= "Service Provisioning" desc = "Validation (Empty Ep-q group name)"/>
+<testCase id = "49"  component= "Service Provisioning" desc = "Deleting a Ep-queue group"/>
+<testCase id = "50"  component= "Service Provisioning" desc = "Adding a Ep-queue group(Billing)"/>
+<testCase id = "51"  component= "Service Provisioning" desc = "Adding a Ep-queue group(Map)"/>
+<testCase id = "52"  component= "Service Provisioning" desc = "Adding a Vteam(Inbound EP)"/>
+<testCase id = "53"  component= "Service Provisioning" desc = "Editing a Vteam(Inbound EP)"/>
+<testCase id = "54"  component= "Service Provisioning" desc = "Adding a Vteam(Inbound Queue)"/>
+<testCase id = "55"  component= "Service Provisioning" desc = "Editing a Vteam(Inbound Queue)"/>
+<testCase id = "56"  component= "Service Provisioning" desc = "Adding a Vteam(Outdial EP)"/>
+<testCase id = "57"  component= "Service Provisioning" desc = "Editing a Vteam(Outdial EP)"/>
+<testCase id = "58"  component= "Service Provisioning" desc = "Adding a Vteam(Outdial Queue)"/>
+<testCase id = "59"  component= "Service Provisioning" desc = "Editing a Vteam(Outdial Queue)"/>
+<testCase id = "60"  component= "Service Provisioning" desc = "Adding a duplicate Vteam(Inbound EP)"/>
+<testCase id = "61"  component= "Service Provisioning" desc = "Adding a duplicate Vteam(Inbound Queue)"/>
+<testCase id = "62"  component= "Service Provisioning" desc = "Adding a duplicate Vteam(Outdial EP)"/>
+<testCase id = "63"  component= "Service Provisioning" desc = "Adding a duplicate Vteam(Outdial Queue)"/>
+<testCase id = "64"  component= "Service Provisioning" desc = "Copying a Vteam(Inbound EP)"/>
+<testCase id = "65"  component= "Service Provisioning" desc = "Copying a Vteam(Inbound Queue)"/>
+<testCase id = "66"  component= "Service Provisioning" desc = "Copying a Vteam(Outdial EP)"/>
+<testCase id = "67"  component= "Service Provisioning" desc = "Copying a Vteam(Outdial Queue)"/>
+<testCase id = "68"  component= "Service Provisioning" desc = "Validation (Empty Vteam name)"/>
+<testCase id = "69"  component= "Service Provisioning" desc = "Validation (Empty Controlscript URL name)"/>
+<testCase id = "70"  component= "Service Provisioning" desc = "Validation (Special characters in Vteam name)"/>
+<testCase id = "71"  component= "Service Provisioning" desc = "Adding a WorkType"/>
+<testCase id = "72"  component= "Service Provisioning" desc = "Adding a Duplicate WorkType"/>
+<testCase id = "73"  component= "Service Provisioning" desc = "Editing a WorkType"/>
+<testCase id = "75"  component= "Service Provisioning" desc = "WorkType Validation(Empty worktype name)"/>
+<testCase id = "76"  component= "Service Provisioning" desc = "Adding a DN to EP Mapping entry"/>
+<testCase id = "77"  component= "Service Provisioning" desc = "Editing a DN to EP Mapping entry"/>
+<testCase id = "78"  component= "Service Provisioning" desc = "Adding a duplicate DN to EP Mapping entry"/>
+<testCase id = "79"  component= "Service Provisioning" desc = "DN to EP Mapping entry Validation (Empty DN)"/>
+<testCase id = "80"  component= "Service Provisioning" desc = "Deleting a DN to EP Mapping entry"/>
+<testCase id = "81"  component= "Service Provisioning" desc = "Adding a Multimedia Profile"/>
+<testCase id = "82"  component= "Service Provisioning" desc = "Editing a Multimedia Profile"/>
+<testCase id = "83"  component= "Service Provisioning" desc = "Adding a Multimedia Profile"/>
+<testCase id = "84"  component= "Service Provisioning" desc = "Adding a duplicate Multimedia Profile"/>
+<testCase id = "85"  component= "Service Provisioning" desc = "Multimedia Profile Validation (Empty profile name)"/>
+<testCase id = "86"  component= "Service Provisioning" desc = "Multimedia Profile Validation (Special characters in profile name)"/>
+<testCase id = "87"  component= "Service Provisioning" desc = "Multimedia Profile Validation (All channels as zero)"/>
+<testCase id = "88" component= "Service Provisioning" desc = "Adding a Site"/>
+<testCase id = "89" component= "Service Provisioning" desc = "Editing a Site"/>
+<testCase id = "90" component= "Service Provisioning" desc = "Site Validation(Empty Site name)"/>
+<testCase id = "91" component= "Service Provisioning" desc = "Site Validation(Special characters in Site name)"/>
+<testCase id = "92" component= "Service Provisioning" desc = "Site Validation(Capacity with alphabets)"/>
+<testCase id = "93" component= "Service Provisioning" desc = "Site Validation(Empty Capacity entry)"/>
+<testCase id = "94" component= "Service Provisioning" desc = "Adding a agent based team"/>
+<testCase id = "95" component= "Service Provisioning" desc = "Editing a team"/>
+<testCase id = "96" component= "Service Provisioning" desc = "Adding a capacity based team"/>
+<testCase id=  "97" component= "Service Provisioning" desc = "Adding a duplicate team"/>
+<testCase id = "98" component= "Service Provisioning" desc = "Team validation(Empty team name)"/>
+<testCase id = "99" component= "Service Provisioning" desc = "Team validation(Empty capacity)"/>
+<testCase id = "100" component= "Service Provisioning" desc = "Team validation(Special characters in team name)"/>
+<testCase id = "101" component= "Service Provisioning" desc = "Team validation(Empty priority)"/>
+<testCase id = "102" component= "Service Provisioning" desc = "Team validation (Characters in Team DN)"/>
+<testCase id = "103" component= "Service Provisioning" desc = "Team validation (Empty Team DN)"/>
+<testCase id = "104" component= "Service Provisioning" desc = "Adding an Site level address book"/>
+<testCase id = "105" component= "Service Provisioning" desc = "Site level Address book Validation(Empty address book name)"/>
+<testCase id = "106" component= "Service Provisioning" desc = "Site level Address book Validation(Empty Name)"/>
+<testCase id = "107" component= "Service Provisioning" desc = "Site level Address book Validation(Empty Phone number)"/>
+<testCase id = "108" component= "Service Provisioning" desc = "Duplicate  Site level Address book"/>
+<testCase id = "109" component= "Service Provisioning" desc = "Entry name with special characters"/>
+<testCase id = "110" component= "Service Provisioning" desc = "Adding an Agent Profile"/>
+<testCase id = "111" component= "Service Provisioning" desc = "Editing an Agent Profile"/>
+<testCase id = "112" component= "Service Provisioning" desc = "Adding a duplicate Agent Profile"/>
+<testCase id = "113" component= "Service Provisioning" desc = "Agent Profile Validation (Empty profile name)"/>
+<testCase id = "114" component= "Service Provisioning" desc = "Agent Profile Validation (Special characters in profile name)"/>
+<testCase id = "115" component= "Service Provisioning" desc = "Agent Profile Validation (Empty autowrap up value)"/>
+<testCase id = "116" component= "Service Provisioning" desc = "Adding an agent level Agent Profile"/>
+<testCase id = "117" component= "Service Provisioning" desc = "Editing an agent level  Agent Profile"/>
+<testCase id = "118" component= "Service Provisioning" desc = "Adding a duplicate agent level  Agent Profile"/>
+<testCase id = "119" component= "Service Provisioning" desc = "Agent level Agent Profile Validation (Empty profile name)"/>
+<testCase id = "120" component= "Service Provisioning" desc = "Agent level Agent Profile Validation (Special characters in profile name)"/>
+<testCase id = "121" component= "Service Provisioning" desc = "Agent level Agent Profile Validation (Empty autowrap up value)"/>
+<testCase id = "122" component= "Service Provisioning" desc = "Adding an agent"/>
+<testCase id = "123" component= "Service Provisioning" desc = "Editing an agent"/>
+<testCase id = "124" component= "Service Provisioning" desc = "Adding a duplicate agent"/>
+<testCase id = "125" component= "Service Provisioning" desc = "Agent Validation (Empty agent name)"/>
+<testCase id = "126" component= "Service Provisioning" desc = "Agent Validation (Empty agent login)"/>
+<testCase id = "127" component= "Service Provisioning" desc = "Agent Validation (Empty password field)"/>
+<testCase id = "128" component= "Service Provisioning" desc = "Agent Validation (Password and confirm passwords are different)"/>
+<testCase id = "129" component= "Service Provisioning" desc = "Agent Validation (Saving without selecting a team)"/>
+<testCase id = "130" component= "Service Provisioning" desc = "Agent Validation (Special characters in agent login)"/>
+<testCase id = "131" component= "Service Provisioning" desc = "Agent Validation (Special characters in agent name)"/>
+<testCase id = "132" component= "Service Provisioning" desc = "Adding an idle code"/>
+<testCase id = "133" component= "Service Provisioning" desc = "Trying to make the default idle code as non-operational"/>
+<testCase id = "134" component= "Service Provisioning" desc = "Trying to make the default idle code as non-default"/>
+<testCase id = "135" component= "Service Provisioning" desc = "Editing an idle code"/>
+<testCase id = "136" component= "Service Provisioning" desc = "Adding a duplicate idle code"/>
+<testCase id = "137" component= "Service Provisioning" desc = "Deleting a default idle code"/>
+<testCase id = "138" component= "Service Provisioning" desc = "Idle code Validation (Empty idle code name)"/>
+<testCase id = "139" component= "Service Provisioning" desc = "Adding a worktype containing wrap up code"/>
+<testCase id = "140" component= "Service Provisioning" desc = "Adding a wrap up code"/>
+<testCase id = "141" component= "Service Provisioning" desc = "Trying to make the default wrapUp code as non-operational"/>
+<testCase id = "142" component= "Service Provisioning" desc = "Trying to make the default WrapUp code as non-default"/>
+<testCase id = "143" component= "Service Provisioning" desc = "Adding a duplicate WrapUp code"/>
+<testCase id = "144" component= "Service Provisioning" desc = "Deleting a default WrapUp code"/>
+<testCase id = "145" component= "Service Provisioning" desc = "Wrapup code Validation (Empty Wrapup code name)"/>
+<testCase id = "74"  component= "Service Provisioning" desc = "Deleting a WorkType"/>
+<testCase id = "146" component= "Service Provisioning" desc = "Adding a Threshold Rule for Entry Point (Short Calls)"/>
+<testCase id = "147" component= "Service Provisioning" desc = "Editing a Threshold Rule for Entry Point (Short Calls)"/>
+<testCase id = "148" component= "Service Provisioning" desc=  "Validation of Threshold rule(No metric key selected)"/>
+<testCase id = "149" component= "Service Provisioning" desc=  "Validation of Threshold rule(No Trigger value entered)"/>
+<testCase id = "150" component= "Service Provisioning" desc=  "Validation of Threshold rule(No Trigger interval value entered)"/>
+<testCase id = "151" component= "Service Provisioning" desc=  "Validation of Threshold rule(Trigger interval value entered is less than 120)"/>
+<testCase id = "152" component= "Service Provisioning" desc=  "Adding a duplicate threshold rule"/>
+<testCase id = "153" component= "Service Provisioning" desc=  "Deleting a threshold rule"/>
+<testCase id = "154" component= "Service Provisioning" desc = "Adding a Threshold rule for Queue (Abandoned Calls)"/>
+<testCase id = "155" component= "Service Provisioning" desc = "Editing a Threshold Rule for Queue (Abandoned Calls)"/>
+<testCase id = "156" component= "Service Provisioning" desc=  "Adding a duplicate threshold rule"/>
+<testCase id = "157" component= "Service Provisioning" desc=  "Deleting a threshold rule"/>
+<testCase id = "158" component= "Service Provisioning" desc = "Adding a Threshold rule for Queue (Average speed of Answer)"/>
+<testCase id = "159" component= "Service Provisioning" desc = "Editing a Threshold Rule for Queue (Average speed of Answer)"/>
+<testCase id = "160" component= "Service Provisioning" desc=  "Adding a duplicate threshold rule"/>
+<testCase id = "161" component= "Service Provisioning" desc=  "Deleting a threshold rule"/>
+<testCase id = "162" component= "Service Provisioning" desc = "Adding a Threshold rule for Queue (Longest Time In Queue)"/>
+<testCase id = "163" component= "Service Provisioning" desc = "Editing a Threshold Rule for Queue (Longest Time In Queue)"/>
+<testCase id = "164" component= "Service Provisioning" desc=  "Adding a duplicate threshold rule"/>
+<testCase id = "165" component= "Service Provisioning" desc=  "Deleting a threshold rule"/>
+<testCase id = "166" component= "Service Provisioning" desc = "Adding a Threshold rule for Queue (Number Of Calls In Queue)"/>
+<testCase id = "167" component= "Service Provisioning" desc = "Editing a Threshold Rule for Queue (Number Of Calls In Queue)"/>
+<testCase id = "168" component= "Service Provisioning" desc=  "Adding a duplicate threshold rule"/>
+<testCase id = "169" component= "Service Provisioning" desc=  "Deleting a threshold rule"/>
+<testCase id = "170" component= "Service Provisioning" desc = "Adding a Threshold rule for Queue (Service Level Threshold)"/>
+<testCase id = "171" component= "Service Provisioning" desc = "Editing a Threshold Rule for Queue (Service Level Threshold)"/>
+<testCase id = "172" component= "Service Provisioning" desc=  "Adding a duplicate threshold rule"/>
+<testCase id = "173" component= "Service Provisioning" desc=  "Deleting a threshold rule"/>
+<testCase id = "174" component= "Service Provisioning" desc = "Adding a Threshold rule for Queue (Short Calls)"/>
+<testCase id = "175" component= "Service Provisioning" desc = "Editing a Threshold Rule for Queue (Short Calls)"/>
+<testCase id = "176" component= "Service Provisioning" desc=  "Adding a duplicate threshold rule"/>
+<testCase id = "177" component= "Service Provisioning" desc=  "Deleting a threshold rule"/>
+<testCase id = "178" component= "Service Provisioning" desc = "Adding a Threshold rule for Site (IB Average Handle Time)"/>
+<testCase id = "179" component= "Service Provisioning" desc = "Editing a Threshold Rule for Site (IB Average Handle Time)"/>
+<testCase id = "180" component= "Service Provisioning" desc=  "Adding a duplicate threshold rule"/>
+<testCase id = "181" component= "Service Provisioning" desc=  "Deleting a threshold rule"/>
+<testCase id = "182" component= "Service Provisioning" desc = "Adding a Threshold rule for Site (Not Responding Agents)"/>
+<testCase id = "183" component= "Service Provisioning" desc = "Editing a Threshold Rule for Site (Not Responding Agents)"/>
+<testCase id = "184" component= "Service Provisioning" desc=  "Adding a duplicate threshold rule"/>
+<testCase id = "185" component= "Service Provisioning" desc=  "Deleting a threshold rule"/>
+<testCase id = "186" component= "Service Provisioning" desc = "Adding a Threshold rule for Site (OB Average Handle Time)"/>
+<testCase id = "187" component= "Service Provisioning" desc = "Editing a Threshold Rule for Site (OB Average Handle Time)"/>
+<testCase id = "188" component= "Service Provisioning" desc=  "Adding a duplicate threshold rule"/>
+<testCase id = "189" component= "Service Provisioning" desc=  "Deleting a threshold rule"/>
+<testCase id = "190" component= "Service Provisioning" desc = "Adding a Threshold rule for Site (Number Of Agents In Outdial)"/>
+<testCase id = "191" component= "Service Provisioning" desc = "Editing a Threshold Rule for Site (Number Of Agents In Outdial)"/>
+<testCase id = "192" component= "Service Provisioning" desc=  "Adding a duplicate threshold rule"/>
+<testCase id = "193" component= "Service Provisioning" desc=  "Deleting a threshold rule"/>
+<testCase id = "194" component= "Service Provisioning" desc = "Adding a Threshold rule for Site (Number Of Logged In Agents)"/>
+<testCase id = "195" component= "Service Provisioning" desc = "Editing a Threshold Rule for Site (Number Of Logged In Agents)"/>
+<testCase id = "196" component= "Service Provisioning" desc=  "Adding a duplicate threshold rule"/>
+<testCase id = "197" component= "Service Provisioning" desc=  "Deleting a threshold rule"/>
+<testCase id = "198" component= "Service Provisioning" desc = "Adding a Threshold rule for Site (Occupancy)"/>
+<testCase id = "199" component= "Service Provisioning" desc = "Editing a Threshold Rule for Site (Occupancy)"/>
+<testCase id = "200" component= "Service Provisioning" desc=  "Adding a duplicate threshold rule"/>
+<testCase id = "201" component= "Service Provisioning" desc=  "Deleting a threshold rule"/>
+<testCase id = "202" component= "Service Provisioning" desc = "Adding a Threshold rule for Team (Occupancy)"/>
+<testCase id = "203" component= "Service Provisioning" desc = "Editing a Threshold Rule for Team (Occupancy)"/>
+<testCase id = "204" component= "Service Provisioning" desc=  "Adding a duplicate threshold rule"/>
+<testCase id = "205" component= "Service Provisioning" desc=  "Deleting a threshold rule"/>
+<testCase id = "206" component= "Service Provisioning" desc = "Adding a Threshold rule for Team (Number Of Logged In Agents)"/>
+<testCase id = "207" component= "Service Provisioning" desc = "Editing a Threshold Rule for Team (Number Of Logged In Agents)"/>
+<testCase id = "208" component= "Service Provisioning" desc=  "Adding a duplicate threshold rule"/>
+<testCase id = "209" component= "Service Provisioning" desc=  "Deleting a threshold rule"/>
+<testCase id = "210" component= "Service Provisioning" desc = "Adding a Threshold rule for Team (Number Of Agents In Outdial)"/>
+<testCase id = "211" component= "Service Provisioning" desc = "Editing a Threshold Rule for Team (Number Of Agents In Outdial)"/>
+<testCase id = "212" component= "Service Provisioning" desc=  "Adding a duplicate threshold rule"/>
+<testCase id = "213" component= "Service Provisioning" desc=  "Deleting a threshold rule"/>
+<testCase id = "214" component= "Service Provisioning" desc = "Adding a Threshold rule for Agent (Total Available Time)"/>
+<testCase id = "215" component= "Service Provisioning" desc = "Editing a Threshold Rule for Agent (Total Available Time)"/>
+<testCase id = "216" component= "Service Provisioning" desc=  "Adding a duplicate threshold rule"/>
+<testCase id = "217" component= "Service Provisioning" desc=  "Deleting a threshold rule"/>
+<testCase id = "218" component= "Service Provisioning" desc=  "Adding a Password Policy"/>
+<testCase id = "219" component= "Service Provisioning" desc=  "Editing a Password Policy"/>
+<testCase id = "220" component= "Service Provisioning" desc=  "Deleting a Password Policy"/>
+<testCase id = "221" component= "Service Provisioning" desc=  "Validation of Password Policy(Empty policy name)"/>
+<testCase id = "222" component= "Service Provisioning" desc=  "Validation of Password Policy(Empty password length)"/>
+<testCase id = "223" component= "Service Provisioning" desc=  "Validation of Password Policy(Empty No of Saved Passwords)"/>
+<testCase id = "224" component= "Service Provisioning" desc=  "Validation of Password Policy(Special characters in policy name)"/>
+<testCase id = "225" component= "Service Provisioning" desc=  "Adding a default Password Policy"/>
+<testCase id = "226" component= "Service Provisioning" desc=  "Deleting a default Password Policy"/>
+<testCase id="352" component="Service Provisioning" desc="Adding a Business Metric" />
+<testCase id="353" component="Service Provisioning" desc="Editing a Business Metric" />
+<testCase id="354" component="Service Provisioning" desc="Deleting a Business Metric" />
+<testCase id="355" component="Service Provisioning" desc="Business Metric Validation(Empty Metric Name)" />
+<testCase id="356" component="Service Provisioning" desc="Business Metric Validation(Special Characters in Metric Name)" />
+<testCase id = "227" component= "Service Provisioning" desc=  "Adding a Tenant DID XML "/>
+<testCase id = "228" component= "Service Provisioning" desc=  "Editing a Tenant DID XML "/>
+<testCase id = "229" component= "Service Provisioning" desc=  "Adding a Pop Listing"/>
+<testCase id = "230" component= "Service Provisioning" desc=  "Editing a Pop Listing"/>
+<testCase id = "231" component= "Service Provisioning" desc=  "Validation of Pop Listing (Empty pop name)"/>
+<testCase id = "232" component= "Service Provisioning" desc=  "Validation of Pop Listing (Empty domain)"/>
+<testCase id = "233" component= "Service Provisioning" desc=  "Validation of Pop Listing (Empty pop id)"/>
+<testCase id = "234" component= "Service Provisioning" desc=  "Validation of Pop Listing (Empty IPsubnet)"/>
+<testCase id = "235" component= "Service Provisioning" desc=  "Adding a duplicate Pop Listing"/>
+<testCase id = "236" component= "Service Provisioning" desc=  "Deleting a Pop Listing"/>
+<testCase id = "237" component= "Service Provisioning" desc=  "Adding a Pop Listing"/>
+<testCase id = "238" component= "Service Provisioning" desc=  "Adding a GW Inventory"/>
+<testCase id = "239" component= "Service Provisioning" desc=  "Editing a GW Inventory"/>
+<testCase id = "240" component= "Service Provisioning" desc=  "Adding a  duplicate GW Inventory"/>
+<testCase id = "241" component= "Service Provisioning" desc=  "Deleting a GW Inventory"/>
+<testCase id = "242" component= "Service Provisioning" desc=  "Validation of GW Inventory (Empty name)"/>
+<testCase id = "243" component= "Service Provisioning" desc=  "Validation of GW Inventory (Empty IP Address)"/>
+<testCase id = "244" component= "Service Provisioning" desc=  "Validation of GW Inventory (Not selecting a VPOP)"/>
+<testCase id = "245" component= "Service Provisioning" desc=  "Validation of GW Inventory (Special characters in Name)"/>
+<testCase id = "246" component= "Service Provisioning" desc=  "Adding a CCG Config"/>
+<testCase id = "247" component= "Service Provisioning" desc=  "Editing a CCG Config"/>
+<testCase id = "249" component= "Service Provisioning" desc=  "Adding a duplicate CCG Config entry"/>
+<testCase id = "248" component= "Service Provisioning" desc=  "Deleting a CCG Config"/>
+<testCase id = "250" component= "Service Provisioning" desc=  "Validation of CCG Config (Empty name)"/>
+<testCase id = "251" component= "Service Provisioning" desc=  "Adding a CCG Config"/>
+<testCase id = "252" component= "Service Provisioning" desc=  "Adding a MediaServer Config"/>
+<testCase id = "253" component= "Service Provisioning" desc=  "Adding a MediaServer Config"/>
+<testCase id = "254" component= "Service Provisioning" desc=  "Adding a duplicate MediaServer Config"/>
+<testCase id = "255" component= "Service Provisioning" desc=  "Editing MediaServer config"/>
+<testCase id = "256" component= "Service Provisioning" desc=  "MediaServer Config (Empty name)"/>
+<testCase id = "257" component= "Service Provisioning" desc=  "MediaServer Config(Empty IP Address)"/>
+<testCase id = "258" component= "Service Provisioning" desc=  "MediaServer Config(Special Characters)"/>
+<testCase id = "259" component= "Service Provisioning" desc=  "Deleting a MediaServer config"/>
+<testCase id = "260" component= "Service Provisioning" desc=  "Adding a VPOP MS Mapping"/>
+<testCase id = "261" component= "Service Provisioning" desc=  "VPOP MS Mapping Validation (Empty VPOP MS name)"/>
+<testCase id = "262" component= "Service Provisioning" desc=  "VPOP MS Mapping Validation (Clicking on Save without selecting media servers)"/>
+<testCase id = "263" component= "Service Provisioning" desc=  "Editing a VPOP MS Mapping"/>
+<testCase id = "264" component= "Service Provisioning" desc=  "Deleting a VPOP MS Mapping"/>
+<testCase id = "265" component= "Service Provisioning" desc=  "Adding a Outdial Config entry"/>
+<testCase id = "266" component= "Service Provisioning" desc=  "Editing a Outdial Config entry"/>
+<testCase id = "267" component= "Service Provisioning" desc=  "Deleting a Outdial Config entry"/>
+<testCase id = "268" component= "Service Provisioning" desc=  "Adding a POP Mapping entry"/>
+<testCase id = "269" component= "Service Provisioning" desc=  "Editing a POP Mapping entry"/>
+<testCase id = "270" component= "Service Provisioning" desc=  "POP Mapping entry Validation"/>
+<testCase id = "271" component= "Service Provisioning" desc=  "POP Mapping entry Validation"/>
+<testCase id = "272" component= "Service Provisioning" desc=  "POP Mapping entry Validation"/>
+<testCase id = "273" component= "Service Provisioning" desc=  "Deleting a POP Mapping entry"/>
+<testCase id = "274" component= "Service Provisioning" desc=  "Adding a Server Mapping entry"/>
+<testCase id = "275" component= "Service Provisioning" desc=  "Editing a Server Mapping entry"/>
+<testCase id = "276" component= "Service Provisioning" desc=  "Deleting a Server Mapping entry"/>
+<testCase id = "277" component= "Service Provisioning" desc=  "Adding a Server Mapping entry"/>
+<testCase id = "278" component= "Service Provisioning" desc=  "Adding a Server Mapping entry"/>
+<testCase id = "279" component= "Service Provisioning" desc=  "Adding a Server Mapping entry"/>
+<testCase id = "280" component= "Service Provisioning" desc=  "Adding a Server Mapping entry"/>
+<testCase id = "281" component= "Service Provisioning" desc=  "Adding a Server Mapping entry"/>
+<testCase id = "282" component= "Service Provisioning" desc=  "Adding a Server Mapping entry"/>
+<testCase id = "283" component= "Service Provisioning" desc=  "Adding a duplicate Server Mapping entry"/>
+<testCase id = "284" component= "Service Provisioning" desc=  "Replicate Server Mapping entry"/>
+<testCase id = "285" component= "Service Provisioning" desc=  "Adding a Component Mapping entry"/>
+<testCase id = "286" component= "Service Provisioning" desc=  "Editing a Component Mapping entry"/>
+<testCase id = "287" component= "Service Provisioning" desc=  "Deleting a Component Mapping entry"/>
+<testCase id = "288" component= "Service Provisioning" desc=  "Adding a Multimedia Enabler(Email)"/>
+<testCase id = "289" component= "Service Provisioning" desc=  "Adding a Multimedia Enabler(Chat)"/>
+<testCase id = "290" component= "Service Provisioning" desc=  "Adding a Multimedia Enabler(Video)"/>
+<testCase id = "291" component= "Service Provisioning" desc=  "Adding a Multimedia Enabler(Others)"/>
+<testCase id = "292" component= "Service Provisioning" desc=  "Adding a Multimedia Enabler(Fax)"/>
+<testCase id = "293" component= "Service Provisioning" desc=  "Adding a duplicate Multimedia Enabler(Fax)"/>
+<testCase id = "294" component= "Service Provisioning" desc=  "Copying a Multimedia Enabler"/>
+<testCase id = "295" component= "Service Provisioning" desc=  "Editing a duplicate Multimedia Enabler"/>
+<testCase id = "296" component= "Service Provisioning" desc=  "Deleting a duplicate Multimedia Enabler"/>
+<testCase id = "297" component= "Service Provisioning" desc=  "Multimedia Enabler Validation(Empty enabler name)"/>
+<testCase id = "298" component= "Service Provisioning" desc=  "Multimedia Enabler Validation(Empty display label)"/>
+<testCase id = "299" component= "Service Provisioning" desc=  "Multimedia Enabler Validation(Empty agent display label)"/>
+<testCase id = "300" component= "Service Provisioning" desc=  "Multimedia Enabler Validation(Empty Agent URL)"/>
+<testCase id = "301" component= "Service Provisioning" desc=  "Multimedia Enabler Validation(Empty Provisioning URL)"/>
+<testCase id = "302"  component= "Service Provisioning" desc = "Adding a Multimedia Profile"/>
+<testCase id = "303" component= "Service Provisioning" desc=  "Adding a Multimedia Extension"/>
+<testCase id = "304" component= "Service Provisioning" desc=  "Adding a duplicate Multimedia Extension"/>
+<testCase id = "305" component= "Service Provisioning" desc=  "Editing a Multimedia Extension"/>
+<testCase id = "306" component= "Service Provisioning" desc=  "Multimedia Extension Validation (Empty name)"/>
+<testCase id = "307" component= "Service Provisioning" desc=  "Multimedia Extension Validation (No media profile selected)"/>
+<testCase id = "308" component= "Service Provisioning" desc=  "Deleting a Multimedia Extension"/>
+<testCase id = "309" component= "ACL Administrator" desc=  "Adding an ACL user"/>
+<testCase id = "310" component= "ACL Administrator" desc=  "Adding an ACL user"/>
+<testCase id = "311" component= "ACL Administrator" desc=  "Editing an ACL user"/>
+<testCase id = "312" component= "ACL Administrator" desc=  "Suspending an ACL user"/>
+<testCase id = "313" component= "ACL Administrator" desc=  "Deleting an ACL user"/>
+<testCase id = "314" component= "ACL Administrator" desc=  "ACL user Validation(Empty First name)"/>
+<testCase id = "315" component= "ACL Administrator" desc=  "ACL user Validation(Empty Last name)"/>
+<testCase id = "316" component= "ACL Administrator" desc=  "ACL user Validation(Empty user name)"/>
+<testCase id = "317" component= "ACL Administrator" desc=  "ACL user Validation(No Vteams selected)"/>
+<testCase id = "318" component= "ACL Administrator" desc=  "ACL user Validation(No Sites selected)"/>
+<testCase id = "319" component= "ACL Administrator" desc=  "ACL user Validation(No Teams selected)"/>
+<testCase id = "320" component= "ACL Administrator" desc=  "Activating a suspended user"/>
+<testCase id = "321" component= "ACL Administrator" desc=  "Adding a duplicate ACL user"/>
+<testCase id = "322" component= "ACL Administrator" desc=  "ACL user(Verifying Excel link)"/>
+<testCase id = "323" component= "ACL Administrator" desc=  "ACL user(Verifying CSV link)"/>
+<testCase id = "324" component= "ACL Administrator" desc=  "Copying an ACL user"/>
+<testCase id = "325" component= "ACL Administrator" desc=  "Adding a Role"/>
+<testCase id = "326" component= "ACL Administrator" desc=  "Editing a Role"/>
+<testCase id = "327" component= "ACL Administrator" desc=  "Adding a Duplicate Role"/>
+<testCase id = "328" component= "ACL Administrator" desc=  "Deleting a Role"/>
+<testCase id = "329" component= "ACL Administrator" desc=  "Role Validation(Empty Role name)"/>
+<testCase id = "330" component= "ACL Administrator" desc=  "Adding a Module"/>
+<testCase id = "331" component= "ACL Administrator" desc=  "Adding a duplicate module"/>
+<testCase id = "332" component= "ACL Administrator" desc=  "Deleting a module"/>
+<testCase id = "333" component= "ACL Administrator" desc=  "Module Validation(Empty module name)"/>
+<testCase id = "334" component= "ACL Administrator" desc=  "Adding a Permission"/>
+<testCase id = "335" component= "ACL Administrator" desc=  "Adding a duplicate permission"/>
+<testCase id = "336" component= "ACL Administrator" desc=  "Deleting a permission"/>
+<testCase id = "337" component= "ACL Administrator" desc=  "permission Validation(Empty module name)"/>
+<testCase id = "338" component= "ACL Administrator" desc=  "ACL user Validation with space in user-name at beginning"/>
+<testCase id = "339" component= "ACL Administrator" desc=  "ACL user Validation with space in user-name at end"/>
+<testCase id = "340" component= "Operations Administrator" desc="Adding an Operation Administrator"/>
+<testCase id = "341" component= "Operations Administrator" desc="Adding an Operation Administrator"/>
+<testCase id = "342" component= "Operations Administrator" desc="Adding a duplicate Operation Administrator"/>
+<testCase id = "343" component= "Operations Administrator" desc="Editing an Operation Administrator"/>
+<testCase id = "344" component= "Operations Administrator" desc="Suspending an Operation Administrator"/>
+<testCase id = "345" component= "Operations Administrator" desc="Activating an Operation Administrator"/>
+<testCase id = "346" component= "Operations Administrator" desc="Deleting an Operation Administrator"/>
+<testCase id = "347" component= "Operations Administrator" desc="Operation Administrator Validation (Empty user name)"/>
+<testCase id = "348" component= "Operations Administrator" desc="Operation Administrator Validation (Empty passwords)"/>
+<testCase id = "349" component= "Operations Administrator" desc="Operation Administrator Validation (Empty First name)"/>
+<testCase id = "350" component= "Operations Administrator" desc="Operation Administrator Validation (Empty last name)"/>
+<testCase id = "351" component= "Operations Administrator" desc="Operation Administrator validation (Special characters in user name)"/>
+<testCase id = "357" component= "Message Broadcast" desc="Adding a message broadcast"/>
+<testCase id = "358" component= "Message Broadcast" desc="Editing a message broadcast"/>
+<testCase id = "359" component= "Message Broadcast" desc="Adding a Global message broadcast"/>
+<testCase id = "360" component= "Message Broadcast" desc="Message broadcast Validation(Empty message)"/>
+<testCase id = "361" component= "Message Broadcast" desc="Message broadcast Validation(From date greater than To date)"/>
+<testCase id = "362" component= "Message Broadcast" desc="Message broadcast Validation(To date greater than current date)"/>
+<testCase id = "363" component= "Message Broadcast" desc="Message broadcast Validation(From date greater than current date)"/>
+<testCase id = "364" component= "Message Broadcast" desc="Message broadcast Validation(Adding a message without selecting a tenant)"/-->
+
+
+
+</testplan>

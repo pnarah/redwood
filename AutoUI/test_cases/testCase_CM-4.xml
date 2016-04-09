@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<testcase id="CM-4" max-time="" >
+    
+        <script>
+	   <addMonitoringSchedule
+				name="Script Schedule 1"		
+				startDate="7/Apr/2016"
+				endDate="9/Apr/2016"
+				startTime="1500"
+				endTime="2000"
+				daysOfWeek="daily"
+				dn="2004"
+				vTeam="All"
+				site="All"
+				team="Crispin_Team-1;Spigold_Team-1;Winesap_Team-2"
+				agent="CrispinAgent1;SpigoldAgent4;WinesapAgent2"
+				message="Schedule saved"
+	     />
+         </script>
+</testcase>
+
