@@ -2,6 +2,9 @@ package test.docker.test;
 
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
+
+import java.net.URL;
+
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.Proxy;
@@ -10,6 +13,8 @@ import org.openqa.selenium.Proxy.ProxyType;
 import org.openqa.selenium.firefox.FirefoxBinary;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.asserts.SoftAssert;
 
@@ -39,15 +44,18 @@ public class Provisioning{
 	@Test
 	public void login() {
 		try {
-
+			Boolean headless = true;
+			
 			FirefoxOptions fOptions = new FirefoxOptions();
-		    FirefoxBinary firefoxBinary = new FirefoxBinary();
-		    firefoxBinary.addCommandLineOptions("--headless");
-		    fOptions.setBinary(firefoxBinary);
+			fOptions.setHeadless(headless);
 
+	        DesiredCapabilities dc = DesiredCapabilities.firefox();
+	        dc.merge(fOptions);
+
+	        
 		    
 			logger.info("Initiating gacko firefox driver with Proxy setting at ");
-			driver = new FirefoxDriver(fOptions);
+			driver = new RemoteWebDriver(new URL("http://172.17.0.3:4444/wd/hub"), dc);
 			driverWait = new WebDriverWait(driver, 20);
 			logger.info("getting google.com");
 			driver.get("http://google.com");
