@@ -45,18 +45,23 @@ public class Provisioning{
 	@Test
 	public void login() {
 		try {
-			Boolean headless = true;
-			
+
+//			FirefoxOptions fOptions = new FirefoxOptions();
+//		    FirefoxBinary firefoxBinary = new FirefoxBinary();
+//		    firefoxBinary.addCommandLineOptions("--headless");
+//		    fOptions.setBinary(firefoxBinary);
+//			Proxy prox = new Proxy();
+//			prox.setProxyType(ProxyType.MANUAL);
+//			prox.setHttpProxy(loadedConf.getPROXY_HOSTIP_PORT());
+//			prox.setSslProxy(loadedConf.getPROXY_HOSTIP_PORT());
+//			prox.setFtpProxy(loadedConf.getPROXY_HOSTIP_PORT());
+//			fOptions.setProxy(prox);
+		
 			FirefoxOptions fOptions = new FirefoxOptions();
-			fOptions.setHeadless(headless);
+			fOptions.setHeadless(true);
 
-	        DesiredCapabilities dc = DesiredCapabilities.firefox();
-	        dc.merge(fOptions);
-
-	       String seleniumHubHost = System.getProperty("seleniumHubHost");
-		    
 			logger.info("Initiating gacko firefox driver with Proxy setting at ");
-			driver = new RemoteWebDriver(new URL("http://"+ seleniumHubHost+ ":4444/wd/hub"), dc);
+			driver = new FirefoxDriver(fOptions);
 			driverWait = new WebDriverWait(driver, 20);
 			logger.info("getting google.com");
 			driver.get("http://google.com");
