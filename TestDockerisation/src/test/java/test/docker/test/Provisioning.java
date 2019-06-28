@@ -53,10 +53,10 @@ public class Provisioning{
 	        DesiredCapabilities dc = DesiredCapabilities.firefox();
 	        dc.merge(fOptions);
 
-	        
+	       String seleniumHubHost = System.getProperty("seleniumHubHost");
 		    
 			logger.info("Initiating gacko firefox driver with Proxy setting at ");
-			driver = new RemoteWebDriver(new URL("http://172.17.0.3:4444/wd/hub"), dc);
+			driver = new RemoteWebDriver(new URL("http://"+ seleniumHubHost+ ":4444/wd/hub"), dc);
 			driverWait = new WebDriverWait(driver, 20);
 			logger.info("getting google.com");
 			driver.get("http://google.com");
