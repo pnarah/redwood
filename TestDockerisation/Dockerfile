@@ -16,8 +16,8 @@ ADD  target/ TestDockerisation-0.0.1-SNAPSHOT.jar  TestDockerisation-0.0.1-SNAPS
 ADD  target/libs libs
 
 # Add the suite xmls
-ADD suite/order-module.xml order-module.xml
-ADD suite/search-module.xml search-module.xml
+ADD portal.xml portal.xml
+ADD testng.xml testng.xml
 
 # Command line to execute the test
 # Expects below ennvironment variables
@@ -25,4 +25,5 @@ ADD suite/search-module.xml search-module.xml
 # MODULE  = order-module / search-module
 # SELENIUM_HUB = selenium hub hostname / ipaddress
 
-ENTRYPOINT java -cp  TestDockerisation-0.0.1-SNAPSHOT.jar:libs/* -DseleniumHubHost=$SELENIUM_HUB  org.testng.TestNG 
+
+ENTRYPOINT java -cp TestDockerisation-0.0.1-SNAPSHOT.jar:libs/* -Dremote=$REMOTE org.testng.TestNG $MODULE

@@ -8,13 +8,12 @@ import java.net.URL;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import org.openqa.selenium.Proxy;
+
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.Proxy.ProxyType;
-import org.openqa.selenium.firefox.FirefoxBinary;
+
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
-import org.openqa.selenium.remote.DesiredCapabilities;
+
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.asserts.SoftAssert;
@@ -33,7 +32,7 @@ public class Provisioning {
 	public void geckoConf() {
 		System.setProperty("baseDir", System.getProperty("user.dir"));
 		baseDir = System.getProperty("baseDir");
-		System.setProperty("webdriver.gecko.driver", baseDir + "/lib/geckodriver");
+		System.setProperty("webdriver.gecko.driver", baseDir + "/libs/geckodriver");
 		System.setProperty(FirefoxDriver.SystemProperty.DRIVER_USE_MARIONETTE, "true");
 		System.setProperty(FirefoxDriver.SystemProperty.BROWSER_LOGFILE, baseDir + "/log/firefoxlogs.txt");
 	}
