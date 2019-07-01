@@ -2,10 +2,10 @@ FROM openjdk:8-jre-slim
 
 
 #17.04.0
-RUN curl -fsSLO https://get.docker/builds/Linux/x86_64/docker-18.09.2-ce.tgz \
-  && tar xzvf docker-18.09.2-ce.tgz \
-  && mv docker/docker /usr/local/bin \
-  && rm -r docker docker-18.09.2-ce.tgz
+#RUN curl -fsSLO https://get.docker/builds/Linux/x86_64/docker-18.09.2-ce.tgz \
+#  && tar xzvf docker-18.09.2-ce.tgz \
+#  && mv docker/docker /usr/local/bin \
+#  && rm -r docker docker-18.09.2-ce.tgz
 
 
 #A Directory in the base image to copy our depedencies
