@@ -12,7 +12,7 @@ RUN curl -fsSLO https://get.docker/builds/Linux/x86_64/docker-18.09.2-ce.tgz \
 WORKDIR /usr/share/tag
 
 # Add the project jar & copy dependencies
-ADD  target/ TestDockerisation-0.0.1-SNAPSHOT.jar  TestDockerisation-0.0.1-SNAPSHOT.jar
+ADD  target/TestDockerisation-0.0.1-SNAPSHOT.jar  TestDockerisation-0.0.1-SNAPSHOT.jar
 ADD  target/libs libs
 
 # Add the suite xmls
