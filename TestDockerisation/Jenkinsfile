@@ -1,15 +1,16 @@
 pipeline {
     agent any
     stages {    
+    dir("${WORKSPACE}/TestDockerisation"){
         stage('Build Jar') {
             steps {
-            dir("${WORKSPACE}/TestDockerisation"){
+            
             	sh """
             	pwd
                 mvn clean package -DskipTests
                 """
                 }
-            }
+            
         }
         stage('Build Image') {
             steps {
@@ -29,6 +30,7 @@ pipeline {
                     }
                 }
             }
+          }
         }        
     }
 }
