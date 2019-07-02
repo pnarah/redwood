@@ -1,36 +1,41 @@
 pipeline {
     agent any
     stages {    
-    dir("${WORKSPACE}/TestDockerisation"){
+    
         stage('Build Jar') {
             steps {
-            
+            dir("${WORKSPACE}/TestDockerisation"){
             	sh """
             	pwd
                 mvn clean package -DskipTests
                 """
+                }
                 }
             
         }
         stage('Build Image') {
             steps {
                 script {
+                dir("${WORKSPACE}/TestDockerisation"){
                 		//  pnarah/testrepo docker container repository name
                       app = docker.build("pnarah/testrepo")
+                      }
                 }
             }
         }
         stage('Push Image') {
             steps {
                 script {
+                dir("${WORKSPACE}/TestDockerisation"){
                 	// dockerhub - create Jenkin credential with this id 
                     docker.withRegistry('https://registry.hub.docker.com', 'dockerhub') {
                         app.push("${BUILD_NUMBER}")
                         app.push("latest")
                     }
+                    }
                 }
             }
-          }
+          
         }        
     }
 }
