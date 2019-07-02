@@ -3,9 +3,12 @@ pipeline {
     stages {    
         stage('Build Jar') {
             steps {
-            	sh 'cd ${WORKSPACE}/TestDockerisation'
-            	sh'pwd'
-                sh 'mvn clean package -DskipTests'
+            dir("${WORKSPACE}/TestDockerisation"){
+            	sh """
+            	pwd
+                mvn clean package -DskipTests
+                """
+                }
             }
         }
         stage('Build Image') {
