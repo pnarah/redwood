@@ -7,7 +7,7 @@ def containertest='conatinertest-${BUILD_NUMBER}'
 
 pipeline {
   
-   agent { label 'dockerhub' }
+   agent { label 'docker' }
 
    stages{
       stage('Setting Up Selenium Grid') {
@@ -21,9 +21,12 @@ pipeline {
       stage('Run Test') {
          steps{
             parallel(
-
-               "portal":{
-                  sh "docker run --rm -e REMOTE="true"  -e MODULE=portal.xml -v ${WORKSPACE}/order:/usr/share/tag/test-output  --network ${network} pnarah/testrepo"
+               "search-module":{
+                  sh "docker run --rm -e SELENIUM_HUB=${seleniumHub} -e BROWSER=firefox -e MODULE=search-module.xml -v ${WORKSPACE}/search:/usr/share/tag/test-output --network ${network} vinsdocker/containertest"
+                  archiveArtifacts artifacts: 'search/**', fingerprint: true
+               },
+               "order-module":{
+                  sh "docker run --rm -e SELENIUM_HUB=${seleniumHub} -e BROWSER=chrome -e MODULE=order-module.xml -v ${WORKSPACE}/order:/usr/share/tag/test-output  --network ${network} vinsdocker/containertest"
                   archiveArtifacts artifacts: 'order/**', fingerprint: true
                }               
             ) 
