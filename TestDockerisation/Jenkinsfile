@@ -3,7 +3,7 @@ pipeline {
     stages {    
         stage('Build Jar') {
             steps {
-            	sh 'cd TestDockerisation'
+            	sh 'cd ${WORKSPACE}/TestDockerisation'
             	sh'pwd'
                 sh 'mvn clean package -DskipTests'
             }
