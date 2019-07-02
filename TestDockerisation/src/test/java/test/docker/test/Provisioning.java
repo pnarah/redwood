@@ -58,8 +58,9 @@ public class Provisioning {
 			logger.info("Initiating gacko firefox driver with Proxy setting at ");
 
 			if (System.getProperty("remote").equalsIgnoreCase("true")) {
+				String hubnode= System.getProperty("seleniumHubHost");
 				logger.info("Initiating remote firefox driver");
-				driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), fOptions);
+				driver = new RemoteWebDriver(new URL("http://"+hubnode+":4444/wd/hub"), fOptions);
 			} else {
 				logger.info("Initiating local firefox driver");
 				driver = new FirefoxDriver(fOptions);

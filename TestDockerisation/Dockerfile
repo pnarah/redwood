@@ -34,4 +34,4 @@ ADD testng.xml testng.xml
 # SELENIUM_HUB = selenium hub hostname / ipaddress
 
 
-ENTRYPOINT java -cp TestDockerisation-0.0.1-SNAPSHOT.jar:libs/* -Dremote=$REMOTE org.testng.TestNG $MODULE
+ENTRYPOINT java -cp TestDockerisation-0.0.1-SNAPSHOT.jar:libs/* -Dremote=$REMOTE -DseleniumHubHost=$SELENIUM_HUB org.testng.TestNG $MODULE
