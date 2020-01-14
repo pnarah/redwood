@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<events>
+<agent xmlns="http://aha.transerainc.com/gen/agent" aepUrl="http://nginx101.dev.broadcloudcc.com:8260/aep/commandIntf" agentId="1874" agentsessionid="3af70ef8-51aa-440f-9f68-678abb6b4583" channelId="91335b6d-3e58-4f23-9888-d887edc9e84d" channelType="telephony" dn="123456" enterpriseId="248" hostIpAddress="" login="true" loginUserId="Agent1 LOGAN" positionId="" retry="false" siteId="434" status="LoggedIn" subStatus="Idle" teamId="972" timestamp="1572520549226">
+  <auxiliaryInformation code="211233" codeType="Idle" name="Default"/>
+</agent>
+<agent xmlns="http://aha.transerainc.com/gen/agent" aepUrl="http://nginx101.dev.broadcloudcc.com:8260/aep/commandIntf" agentId="1874" agentsessionid="3af70ef8-51aa-440f-9f68-678abb6b4583" channelId="91335b6d-3e58-4f23-9888-d887edc9e84d" channelType="telephony" dn="123456" enterpriseId="248" hostIpAddress="" loginUserId="Agent1 LOGAN" positionId="" retry="false" siteId="434" status="LoggedIn" subStatus="Available" teamId="972" timestamp="1572520551756"/>
+<agent xmlns="http://aha.transerainc.com/gen/agent" aepUrl="http://nginx101.dev.broadcloudcc.com:8260/aep/commandIntf" agentId="1874" agentsessionid="3af70ef8-51aa-440f-9f68-678abb6b4583" ahaUrl="http://ace103.dev.broadcloudcc.com:8080/aha" callId="173228982c454ecaa05018c6c62c3307" callLegId="f8bd8be1ab51617d68001e6570877f54@10.134.200.56" channelId="91335b6d-3e58-4f23-9888-d887edc9e84d" channelType="telephony" consultCallId="" dn="123456" enablePauseResume="false" enterpriseId="248" name="setagentstatus" pauseDuration="30000" reason="" siteId="" status="LoggedIn" subStatus="Ringing" teamId="972" timestamp="1572520592912" virtualTeamId="1258">
+  <commandMessage>
+    <param name="callId" value="173228982c454ecaa05018c6c62c3307"/>
+    <param name="IvrPath" value=" EOI"/>
+    <param name="pathId" value=""/>
+    <param name="dnis" value="10001"/>
+    <param name="ani" value="caller1"/>
+    <param name="virtualTeamId" value="1258"/>
+    <param name="virtualTeamName" value="Q_Telephony_1"/>
+    <param name="ronaTime" value="32333"/>
+  </commandMessage>
+</agent>
+<agent xmlns="http://aha.transerainc.com/gen/agent" aepUrl="http://nginx101.dev.broadcloudcc.com:8260/aep/commandIntf" agentId="1874" agentsessionid="3af70ef8-51aa-440f-9f68-678abb6b4583" ahaUrl="http://ace103.dev.broadcloudcc.com:8080/aha" callId="173228982c454ecaa05018c6c62c3307" callLegId="f8bd8be1ab51617d68001e6570877f54@10.134.200.56" channelId="91335b6d-3e58-4f23-9888-d887edc9e84d" channelType="telephony" consultCallId="" dn="123456" enablePauseResume="false" enterpriseId="248" name="setagentstatus" pauseDuration="30000" reason="" siteId="" status="LoggedIn" subStatus="Connected" teamId="972" timestamp="1572520594951" virtualTeamId="1258">
+  <commandMessage>
+    <param name="callId" value="173228982c454ecaa05018c6c62c3307"/>
+    <param name="IvrPath" value=" EOI"/>
+    <param name="pathId" value=""/>
+    <param name="dnis" value="10001"/>
+    <param name="ani" value="caller1"/>
+    <param name="virtualTeamId" value="1258"/>
+    <param name="virtualTeamName" value="Q_Telephony_1"/>
+  </commandMessage>
+</agent>
+<agent-command xmlns="http://aha.transerainc.com/gen/agent" aepUrl="http://nginx101.dev.broadcloudcc.com:8260/aep/commandIntf" agentDn="123456" agentId="1874" agentsessionid="3af70ef8-51aa-440f-9f68-678abb6b4583" ahaUrl="http://ace103.dev.broadcloudcc.com:8080/aha" callId="173228982c454ecaa05018c6c62c3307" callLegId="" channelId="91335b6d-3e58-4f23-9888-d887edc9e84d" channelType="telephony" code="200" enablePauseResume="false" enterpriseId="248" name="CallEnded" pauseDuration="0" reason="" teamId="972" timestamp="1572520605317"/>
+<agent xmlns="http://aha.transerainc.com/gen/agent" aepUrl="http://nginx101.dev.broadcloudcc.com:8260/aep/commandIntf" agentId="1874" agentsessionid="3af70ef8-51aa-440f-9f68-678abb6b4583" ahaUrl="http://ace103.dev.broadcloudcc.com:8080/aha" callId="173228982c454ecaa05018c6c62c3307" callLegId="" channelId="91335b6d-3e58-4f23-9888-d887edc9e84d" channelType="telephony" consultCallId="" dn="123456" enablePauseResume="false" enterpriseId="248" name="setagentstatus" pauseDuration="0" reason="" siteId="" status="LoggedIn" subStatus="WrapUp" teamId="972" timestamp="1572520605329" virtualTeamId="">
+  <commandMessage>
+    <param name="callId" value="173228982c454ecaa05018c6c62c3307"/>
+    <param name="reason" value=""/>
+  </commandMessage>
+</agent>
+<agent xmlns="http://aha.transerainc.com/gen/agent" aepUrl="http://nginx101.dev.broadcloudcc.com:8260/aep/commandIntf" agentId="1874" agentsessionid="3af70ef8-51aa-440f-9f68-678abb6b4583" callId="173228982c454ecaa05018c6c62c3307" channelId="91335b6d-3e58-4f23-9888-d887edc9e84d" channelType="telephony" dn="123456" enterpriseId="248" hostIpAddress="" loginUserId="Agent1 LOGAN" positionId="" retry="false" siteId="434" status="LoggedIn" subStatus="Idle" teamId="972" timestamp="1572520605693">
+  <auxiliaryInformation code="2074" codeType="Idle" name="Meeting"/>
+  <auxiliaryInformation code="2157" codeType="WrapUp" name="Close"/>
+</agent>
+<agent xmlns="http://aha.transerainc.com/gen/agent" aepUrl="http://nginx101.dev.broadcloudcc.com:8260/aep/commandIntf" agentId="1874" agentsessionid="3af70ef8-51aa-440f-9f68-678abb6b4583" callId="173228982c454ecaa05018c6c62c3307" channelId="91335b6d-3e58-4f23-9888-d887edc9e84d" channelType="telephony" dn="123456" enterpriseId="248" hostIpAddress="" loginUserId="Agent1 LOGAN" positionId="" reason="Script requested logout" retry="false" siteId="434" status="LoggedOut" subStatus="Idle" teamId="972" timestamp="1572520610701">
+  <auxiliaryInformation code="2074" codeType="Idle" name="Meeting"/>
+</agent>
+</events>
