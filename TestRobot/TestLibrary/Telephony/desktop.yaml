@@ -1,0 +1,17 @@
+DESKTOP_URL_QAUS1 : https://adsfasdfadsf.com/index.html
+ELEMENT_WAIT_TIMEOUT : 30
+DESKTOP_AGENTS_QAUS1:
+      - AGENT1 :
+            UASERNAME : vva-agent1
+            USERID : adfads-sdafads@mailinator.com
+            PASSWORD : adsfadsf@123
+            DN : 2375080222
+            TEAM : Team-T1C2E2
+            BROWSER : Chrome
+      - AGENT2:
+            UASERNAME : vva-asdfd
+            USERID: vva-asdfdfads@mailinator.com
+            PASSWORD: adsfadsf@123
+            DN: 2375080223
+            TEAM: Team-T1C2E2
+            BROWSER : Firefox

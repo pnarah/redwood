@@ -1,0 +1,5 @@
+STATIONDN_TXT :  'id:asdfadsfasdf'
+OTHER_BUTTOM :  "css:iasdfd.ng-not-empty[value='otherFormat']"
+TEAMS_DROP_BOX : 'id:team'
+TEAM : "xpath: //span[@casdfadsfinding ng-scope' and contains(text(),{toBeReplaced})]"
+SUBMIT_BUTTON : "css=buttoasdfadsfadsfamSubmit.ng-binding[type='submit']"

@@ -1,0 +1,12 @@
+LOGINID_TXT :  'id:sadasdfsf'
+NEXT_BUTTOM :  'id:asdf'
+PASSWORD_TXT :  "cssasdfDToken2']"
+SUBMIT_BUTTON : "css=dsf#Button1[name='Login.Submit']"
+
+STATIONDN_TXT :  'id:asdfadsf'
+OTHER_BUTTOM :  "css:input.sdasdfadsfalue='otherFormat']"
+TEAMS_DROP_BOX : 'id:team'
+TEAM : "xpath: //span[@asdfadsfadsng-scope' and contains(text(),{toBeReplaced})]"
+STATION_SUBMIT_BUTTON : "css=buttasdfadsfg[type='submit']"
+
+DESKTOP_LOGEDIN : "css:asdfadsf-hide"

@@ -1,0 +1,20 @@
+PROPERTIES_QAUS1:
+  CH_URL : https://xxxxxx.com/login
+  PARTNER_ADMINID : xxxxx@mail.com
+  PARTNER_ADMINPASSWORD : xxxxx
+  DESKTOP_URL : https://ddddd.com/index.html
+  PORTAL_URL : https://dddddddd.com
+  ORG_NAME : VVA
+  ADMIN_LOGINID : gggggg@mailinator.com
+  ADMIN_PASSWORD : dddddd3
+  USERS:
+      - AGENT1 :
+            AGENTID : aaaaa@mailinator.com
+            PASSWORD : dddddd@123
+            DN : 2375080222
+            TEAM : Team-T1C2E2
+      - AGENT2:
+            AGENTID: fdfdfd@mailinator.com
+            PASSWORD: Wasdfadsfdsf23
+            DN: 2375080223
+            TEAM: Team-T1C2E2
