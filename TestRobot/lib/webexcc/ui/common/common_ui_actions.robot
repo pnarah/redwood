@@ -54,4 +54,7 @@ WaitAndFill
     input text  ${element}   ${text}
 
 
-
+Switch To Different Browser
+    [Arguments]  ${agentId}
+    Log To Console      "Switching Browser to ${agentId}"
+    Switch To Browser   ${agentId}
