@@ -1,0 +1,50 @@
+#!groovy
+
+String BUILD_NODE_LABEL = env.BUILD_NODE_LABEL
+
+pipeline {
+
+    agent { label "${BUILD_NODE_LABEL}" }
+
+    stages {
+        stage("Install dependencies [sbt]") {
+            steps {
+                sh '''
+                  curl https://bintray.com/sbt/rpm/rpm |  tee /etc/yum.repos.d/bintray-sbt-rpm.repo
+                  yum -y install sbt
+                  '''
+            }
+        }
+
+        stage("Run Test") {
+            steps {
+                sh '''
+                pwd
+                cd ./AppPerformanceTestGatling
+                pwd
+                sbt clean compile
+                sbt -DdataCenter=${DATACENTER} -DnoOfSimulatedUsers=${SIMULATEDUSERSCONT} -DmaxResponseTime=${MAXRESPONSETIME} gatling:testOnly com.cisco.ccbu.automation.simulation.${SUITE_TO_SIMULATE}
+            '''
+            }
+        }
+    }
+
+    post {
+        always {
+            gatlingArchive()
+            //reportsgeneration()
+        }
+    }
+}
+
+def reportsgeneration(){
+    LATEST_RESULT_DIR = sh(script: "/bin/bash -c  'ls -ltd -A1 ./AppPerformanceTestGatling/target/gatling/* | head -1 | cut -d'/' -f5'", returnStdout: true).trim()
+    echo "LATEST_RESULT_DIR = ${LATEST_RESULT_DIR}"
+    publishHTML([allowMissing         : false,
+                 alwaysLinkToLastBuild: true,
+                 keepAll              : true,
+                 reportDir            : '',
+                 reportFiles          : "./AppPerformanceTestGatling/target/gatling/${LATEST_RESULT_DIR}/index.html",
+                 reportName           : 'GatlingHtmlReport',
+                 reportTitles         : ''])
+}

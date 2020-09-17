@@ -1,0 +1,17 @@
+DATACENTER : data center selection, default is set to qaus1
+SIMULATEDUSERSCONT : Number of maximum users to simulate, default is set to 100
+MAXRESPONSETIME : Acceptable max response time of a request, default is set to 500 ms
+SUITE_TO_SIMULATE : Specify the suite to simulate
+
+
+sbt -DdataCenter=${DATACENTER} -DnoOfSimulatedUsers=${SIMULATEDUSERSCONT} -DmaxResponseTime=${MAXRESPONSETIME} gatling:testOnly com.cisco.ccbu.automation.simulation.${SUITE_TO_SIMULATE}
+
+
+
+Check API
+----------
+verifying that the response to a request matches expectations
+    http("My Request").get("myUrl").check(status.is(200))
+    http("My Request").get("myUrl").check(status.not(404), status.not(500))
+    http("My Request").get("myUrl").check(status.in(200, 302, 304))
+eventually capturing some elements in it.
