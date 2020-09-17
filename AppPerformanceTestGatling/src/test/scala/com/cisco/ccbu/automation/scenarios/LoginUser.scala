@@ -9,7 +9,7 @@ object LoginUser {
   val btsUrl = Environment.btsUrl+"/idb"
 
   val feeder = csv("data.csv").circular
-
+  var xsrfKey : String = ""
 
   val loginuserStep = feed(feeder)
     .exec(http("LOGIN_TO_BROWSER")
@@ -60,6 +60,24 @@ object LoginUser {
       .formParam("isAudioCaptcha", "false")
       .formParam("gx_charset", "UTF-8")
     )
+
+    .exec(http("PORTAL_HOME_HTML")
+      .get("/portal/home.html")
+      .headers(Headers.headers_164)
+      .check(status.is(200))
+      .check( bodyString.saveAs( "RESPONSE_DATA" ) )
+    )
+
+    .exec( session => {
+      println("Some Restful Service Response Body:")
+      val contentForTocken = session("RESPONSE_DATA").as[String]
+      val pattern = """.*name=\"xsrfKey\".value=\"([0-9a-z-]+)\".*""".r
+      val xsrfKeyMatch = pattern.findAllIn(contentForTocken)
+      xsrfKey = xsrfKeyMatch.group(1).toString
+      println("=======>>xsrfKey===>>>>>>"+ xsrfKey)
+      session
+    })
+
     .pause(20)
 
 
